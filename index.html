@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Churrascômetro</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <main class="container">
+            <h1 id="titulo">Churrascômetro</h1>
+            <input
+                type="number"
+                name="adultos"
+                id="adultos"
+                placeholder="Adultos"
+            />
+            <input
+                type="number"
+                name="criancas"
+                id="criancas"
+                placeholder="Crianças"
+            />
+            <input
+                type="number"
+                name="duracao"
+                id="duracao"
+                placeholder="Duração (h)"
+            />
+            <button onclick="calcular()">Calcular</button>
+
+            <div id="resultado">
+                <img
+                    class="img"
+                    src="./assets/meat.png"
+                    alt="imagem da carne"
+                />
+                <img
+                    src="./assets/beer.png"
+                    alt="imagem de cerveja"
+                    class="img"
+                />
+                <img
+                    src="./assets/softdrinks-can.png"
+                    alt="imagem de refrigerante e água"
+                    class="img"
+                    id="imgRefri"
+                />
+
+                <p></p>
+                <br />
+                <p></p>
+            </div>
+        </main>
+
+        <h2 class="h2">
+            Faça a compra certa para seu churrasco e evite
+            desperdícios
+        </h2>
+
+        <script src="script.js"></script>
+    </body>
+</html>
